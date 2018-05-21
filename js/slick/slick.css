@@ -1,0 +1,157 @@
+/* Slider */
+
+.slick-slider {
+  position: relative;
+  display: block;
+  box-sizing: border-box;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+  -khtml-user-select: none;
+  -ms-touch-action: pan-y;
+  touch-action: pan-y;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.slick-list {
+  position: relative;
+  display: block;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  height: 362px;
+}
+
+.slick-cloned {
+  background: rgba(231, 56, 39, 0);
+  background: -moz-linear-gradient(left, rgba(231, 56, 39, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(231, 56, 39, 0)), color-stop(100%, rgba(255, 255, 255, 1)));
+  background: -webkit-linear-gradient(left, rgba(231, 56, 39, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -o-linear-gradient(left, rgba(231, 56, 39, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: -ms-linear-gradient(left, rgba(231, 56, 39, 0) 0%, rgba(255, 255, 255, 1) 100%);
+  background: linear-gradient(to right, #b4abe9 0%, rgba(255, 255, 255, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e73827', endColorstr='#ffffff', GradientType=1);
+}
+
+.slick-initialized .slick-slide {
+  display: block;
+  background: rgba(255, 255, 255, 1);
+  background: -moz-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(231, 56, 39, 0) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(255, 255, 255, 1)), color-stop(100%, rgba(231, 56, 39, 0)));
+  background: -webkit-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(231, 56, 39, 0) 100%);
+  background: -o-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(231, 56, 39, 0) 100%);
+  background: -ms-linear-gradient(left, rgba(255, 255, 255, 1) 0%, rgba(231, 56, 39, 0) 100%);
+  background: linear-gradient(to right, rgba(255, 255, 255, 1) 0%, rgba(231, 56, 39, 0) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e73827', GradientType=1);
+}
+.slick-prev:hover {
+    background: url(../img/left_black.png) no-repeat !important;
+}
+.slick-next:hover {
+    background: url(../img/right_black.png) no-repeat !important;
+}
+.slick-list:focus {
+  outline: none;
+}
+
+.slick-list.dragging {
+  cursor: pointer;
+  cursor: hand;
+}
+
+.slick-slider .slick-track, .slick-slider .slick-list {
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  -ms-transform: translate3d(0, 0, 0);
+  -o-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.slick-track {
+  position: relative;
+  top: 0;
+  left: 0;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slick-track:before, .slick-track:after {
+  display: table;
+  content: '';
+}
+
+.slick-track:after {
+  clear: both;
+}
+
+.slick-loading .slick-track {
+  visibility: hidden;
+}
+
+.slick-center {
+  opacity: 1 !important;
+}
+
+.slick-slide {
+  display: none;
+  float: left;
+  min-height: 1px;
+  width: 890px !important;
+  margin-left: 10px;
+  height: 360px;
+  border: 1px #d7d7d7 solid;
+  opacity: 0.5;
+}
+
+button.slick-prev.slick-arrow, button.slick-next.slick-arrow {
+  width: 30px;
+  height: 40px;
+  border: 0;
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+
+button.slick-next.slick-arrow {
+  background: url(../img/next.png) no-repeat;
+  right: 0;
+  margin: -180px 20% 0 0;
+}
+
+button.slick-prev.slick-arrow {
+  background: url(../img/prev.png) no-repeat;
+  margin: 180px 0 0 20%;
+}
+
+[dir='rtl'] .slick-slide {
+  float: right;
+}
+
+.slick-slide img {
+  display: block;
+}
+
+.slick-slide.slick-loading img {
+  display: none;
+}
+
+.slick-slide.dragging img {
+  pointer-events: none;
+}
+
+.slick-loading .slick-slide {
+  visibility: hidden;
+}
+
+.slick-vertical .slick-slide {
+  display: block;
+  height: auto;
+  border: 1px solid transparent;
+}
+
+.slick-arrow.slick-hidden {
+  display: none;
+}
